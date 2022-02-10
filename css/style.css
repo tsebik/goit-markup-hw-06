@@ -672,6 +672,10 @@ a {
   background-origin: border-box;
 }
 
+.checkbox-icon:focus .modal-checkbox {
+  border: var(--accent-color);
+}
+
 .checkbox-icon {
   margin-right: 8px;
   content: "";
@@ -814,7 +818,7 @@ a {
 
 .footer-group {
   display: block;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-input-paragraph {
