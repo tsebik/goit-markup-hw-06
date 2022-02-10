@@ -619,16 +619,12 @@ a {
 
 .modal-form-svg {
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 15px;
 
   transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox-icon:focus {
-  background-color: var(--accent-color);
 }
 
 .form-link {
@@ -672,8 +668,8 @@ a {
   background-origin: border-box;
 }
 
-.checkbox-icon:focus .modal-checkbox {
-  border: var(--accent-color);
+.modal-checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
 }
 
 .checkbox-icon {
