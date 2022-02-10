@@ -94,6 +94,7 @@ a {
 }
 
 .nav-link {
+  display: block;
   position: relative;
   padding: 32px 0;
 }
@@ -512,6 +513,7 @@ a {
 .modal {
   display: block;
   position: absolute;
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -545,13 +547,13 @@ a {
   background-position: center;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   fill: var(--accent-color);
   cursor: pointer;
 }
 
 .modal-title {
-  padding-top: 40px;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -564,7 +566,6 @@ a {
 
 .form-field {
   position: relative;
-  padding-left: 40px;
 }
 
 .modal-label {
@@ -618,12 +619,21 @@ a {
 
 .modal-form-svg {
   position: absolute;
-  top: 29px;
-  left: 52px;
+  top: 14px;
+  left: 15px;
 
   transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.form-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .modal-submit {
@@ -637,6 +647,8 @@ a {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
@@ -823,6 +835,7 @@ a {
 .footer-input {
   display: flex;
   flex-direction: column;
+  padding: 0 16px;
 
   width: 358px;
   height: 50px;
@@ -831,10 +844,14 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--bg-color);
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
 }
 
 .footer-input input::placeholder {
-  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
 
@@ -859,6 +876,7 @@ a {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   width: 200px;
   height: 50px;
@@ -870,6 +888,7 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   transition: transform;
   transition-duration: 250ms;
