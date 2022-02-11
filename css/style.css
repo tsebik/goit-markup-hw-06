@@ -566,6 +566,7 @@ a {
 
 .form-field {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-label {
@@ -579,10 +580,9 @@ a {
 }
 
 .modal-input {
-  margin-bottom: 10px;
   padding-left: 42px;
 
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -602,10 +602,13 @@ a {
   outline: none;
 }
 
-.modal-text {
+.form-comment {
   margin-bottom: 20px;
+}
+
+.modal-text {
   padding: 12px 16px;
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -657,6 +660,14 @@ a {
 .modal-label-checkbox {
   display: flex;
   align-items: center;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--paragraph-color);
+}
+
+.form-checkbox {
   margin-bottom: 30px;
 }
 
@@ -896,7 +907,7 @@ a {
 }
 
 .footer-input-svg {
-  position: absolute;
+  margin-left: 10px;
   right: 28px;
   top: 13px;
   bottom: 13px;
